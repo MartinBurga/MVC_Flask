@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC - Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <nav class="navbar">
+        <div class="container">
+            <h2>MVC Vendedores</h2>
+            <ul class="navbar-nav">
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+
+</html>
